@@ -59,7 +59,7 @@ export const api = {
     
     // Simulate API enrichment
     setTimeout(() => {
-      this.processLookup(lookup.id, userId);
+      api.processLookup(lookup.id, userId);  // Using api instead of this
     }, 2000);
     
     return lookup;
